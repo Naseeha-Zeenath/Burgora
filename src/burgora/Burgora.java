@@ -17,7 +17,6 @@ public class Burgora {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-//        new MainDashBoardForm().setVisible(true);
         new LoginForm().setVisible(true);
     }
     
