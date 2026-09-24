@@ -4,6 +4,8 @@
  */
 package burgora;
 
+import burgora.view.MainDashBoardForm;
+
 /**
  *
  * @author Naseeha
@@ -14,7 +16,7 @@ public class Burgora {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("hi");
+        new MainDashBoardForm().setVisible(true);
     }
     
 }

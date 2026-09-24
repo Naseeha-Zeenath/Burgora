@@ -9,5 +9,5 @@ package burgora.util;
  * @author Naseeha
  */
 public enum OrderStatus {
-    
+    PENDING,PROCESSING,DELIVERED,CANCELLED
 }
