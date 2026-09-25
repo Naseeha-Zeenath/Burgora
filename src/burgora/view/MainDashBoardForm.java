@@ -29,7 +29,7 @@ public class MainDashBoardForm extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        btnManageCustomerOnAction = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -48,9 +48,14 @@ public class MainDashBoardForm extends javax.swing.JFrame {
         jButton2.setForeground(new java.awt.Color(255, 0, 0));
         jButton2.setText("Search");
 
-        jButton3.setFont(new java.awt.Font("Segoe UI", 2, 18)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(255, 0, 0));
-        jButton3.setText("Manage Customer");
+        btnManageCustomerOnAction.setFont(new java.awt.Font("Segoe UI", 2, 18)); // NOI18N
+        btnManageCustomerOnAction.setForeground(new java.awt.Color(255, 0, 0));
+        btnManageCustomerOnAction.setText("Manage Customer");
+        btnManageCustomerOnAction.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnManageCustomerOnActionActionPerformed(evt);
+            }
+        });
 
         jLabel2.setBackground(new java.awt.Color(0, 51, 255));
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/BurgerImage.png"))); // NOI18N
@@ -66,7 +71,7 @@ public class MainDashBoardForm extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnManageCustomerOnAction, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(50, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -88,12 +93,17 @@ public class MainDashBoardForm extends javax.swing.JFrame {
                         .addGap(51, 51, 51)
                         .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(50, 50, 50)
-                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(btnManageCustomerOnAction, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(17, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnManageCustomerOnActionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnManageCustomerOnActionActionPerformed
+        // TODO add your handling code here:
+        new ManageCustomer().setVisible(true);
+    }//GEN-LAST:event_btnManageCustomerOnActionActionPerformed
 
     /**
      * @param args the command line arguments
@@ -131,9 +141,9 @@ public class MainDashBoardForm extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnManageCustomerOnAction;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables

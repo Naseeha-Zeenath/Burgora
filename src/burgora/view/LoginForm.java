@@ -29,6 +29,7 @@ public class LoginForm extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jPasswordField2 = new javax.swing.JPasswordField();
+        btnCloseOnAction = new javax.swing.JButton();
         btnLoginOnAction = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -48,9 +49,23 @@ public class LoginForm extends javax.swing.JFrame {
             }
         });
 
-        btnLoginOnAction.setFont(new java.awt.Font("Segoe UI Semibold", 2, 18)); // NOI18N
-        btnLoginOnAction.setForeground(new java.awt.Color(51, 51, 51));
+        btnCloseOnAction.setBackground(new java.awt.Color(204, 204, 204));
+        btnCloseOnAction.setFont(new java.awt.Font("Segoe UI Semibold", 2, 18)); // NOI18N
+        btnCloseOnAction.setForeground(new java.awt.Color(255, 255, 255));
+        btnCloseOnAction.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/close.png"))); // NOI18N
+        btnCloseOnAction.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnCloseOnAction.setDoubleBuffered(true);
+        btnCloseOnAction.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCloseOnActionActionPerformed(evt);
+            }
+        });
+
+        btnLoginOnAction.setFont(new java.awt.Font("Segoe UI Symbol", 1, 18)); // NOI18N
         btnLoginOnAction.setText("Login");
+        btnLoginOnAction.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnLoginOnAction.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
+        btnLoginOnAction.setFocusable(false);
         btnLoginOnAction.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnLoginOnActionActionPerformed(evt);
@@ -61,32 +76,35 @@ public class LoginForm extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+            .addGroup(layout.createSequentialGroup()
                 .addGap(98, 98, 98)
-                .addComponent(jLabel1)
-                .addContainerGap(92, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(90, 90, 90)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel2)
+                    .addComponent(jLabel1)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jPasswordField2, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnLoginOnAction)))
-                .addGap(76, 76, 76))
+                        .addGap(6, 6, 6)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(btnLoginOnAction, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jPasswordField2, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(btnCloseOnAction)))))
+                .addContainerGap(91, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(67, 67, 67)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(17, 17, 17)
-                .addComponent(jLabel2)
                 .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jPasswordField2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnLoginOnAction, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(66, Short.MAX_VALUE))
+                    .addComponent(btnCloseOnAction, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(btnLoginOnAction, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(50, Short.MAX_VALUE))
         );
 
         pack();
@@ -100,6 +118,10 @@ public class LoginForm extends javax.swing.JFrame {
         // TODO add your handling code here:
         new MainDashBoardForm().setVisible(true);
     }//GEN-LAST:event_btnLoginOnActionActionPerformed
+
+    private void btnCloseOnActionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCloseOnActionActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCloseOnActionActionPerformed
 
     /**
      * @param args the command line arguments
@@ -137,6 +159,7 @@ public class LoginForm extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnCloseOnAction;
     private javax.swing.JButton btnLoginOnAction;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
