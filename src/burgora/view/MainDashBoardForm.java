@@ -30,7 +30,7 @@ public class MainDashBoardForm extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
         btnManageCustomerOnAction = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
+        btnManageOrdersOnAction = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -51,7 +51,7 @@ public class MainDashBoardForm extends javax.swing.JFrame {
         btnManageCustomerOnAction.setBackground(new java.awt.Color(255, 255, 204));
         btnManageCustomerOnAction.setFont(new java.awt.Font("Segoe UI", 2, 18)); // NOI18N
         btnManageCustomerOnAction.setForeground(new java.awt.Color(255, 0, 0));
-        btnManageCustomerOnAction.setText("Manage Customer");
+        btnManageCustomerOnAction.setText("Manage Customers");
         btnManageCustomerOnAction.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnManageCustomerOnAction.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -59,12 +59,17 @@ public class MainDashBoardForm extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setBackground(new java.awt.Color(255, 255, 204));
-        jButton1.setFont(new java.awt.Font("Segoe UI", 2, 18)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 0, 0));
-        jButton1.setText("Order Management");
-        jButton1.setToolTipText("");
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnManageOrdersOnAction.setBackground(new java.awt.Color(255, 255, 204));
+        btnManageOrdersOnAction.setFont(new java.awt.Font("Segoe UI", 2, 18)); // NOI18N
+        btnManageOrdersOnAction.setForeground(new java.awt.Color(255, 0, 0));
+        btnManageOrdersOnAction.setText("Manage Orderes");
+        btnManageOrdersOnAction.setToolTipText("");
+        btnManageOrdersOnAction.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnManageOrdersOnAction.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnManageOrdersOnActionActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -78,7 +83,7 @@ public class MainDashBoardForm extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnManageOrdersOnAction, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnManageCustomerOnAction, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(151, 151, 151)
@@ -94,7 +99,7 @@ public class MainDashBoardForm extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 395, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnManageOrdersOnAction, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(39, 39, 39)
                         .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(47, 47, 47)
@@ -109,6 +114,11 @@ public class MainDashBoardForm extends javax.swing.JFrame {
         // TODO add your handling code here:
         new ManageCustomer().setVisible(true);
     }//GEN-LAST:event_btnManageCustomerOnActionActionPerformed
+
+    private void btnManageOrdersOnActionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnManageOrdersOnActionActionPerformed
+        // TODO add your handling code here:
+        new ManageOrders().setVisible(true);
+    }//GEN-LAST:event_btnManageOrdersOnActionActionPerformed
 
     /**
      * @param args the command line arguments
@@ -147,7 +157,7 @@ public class MainDashBoardForm extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnManageCustomerOnAction;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btnManageOrdersOnAction;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

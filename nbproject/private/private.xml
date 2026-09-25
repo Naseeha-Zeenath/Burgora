@@ -3,12 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/F:/ICD/OOP/Burgora_prjct/Burgora/src/burgora/model/Items.java</file>
-            <file>file:/F:/ICD/OOP/Burgora_prjct/Burgora/src/burgora/model/OrderItem.java</file>
-            <file>file:/F:/ICD/OOP/Burgora_prjct/Burgora/src/burgora/model/Order.java</file>
-            <file>file:/F:/ICD/OOP/Burgora_prjct/Burgora/src/burgora/Burgora.java</file>
+            <file>file:/F:/ICD/OOP/Burgora_prjct/Burgora/src/burgora/view/ManageCustomer.java</file>
             <file>file:/F:/ICD/OOP/Burgora_prjct/Burgora/src/burgora/view/LoginForm.java</file>
-            <file>file:/F:/ICD/OOP/Burgora_prjct/Burgora/src/burgora/util/OrderStatus.java</file>
+            <file>file:/F:/ICD/OOP/Burgora_prjct/Burgora/src/burgora/view/ManageOrders.java</file>
             <file>file:/F:/ICD/OOP/Burgora_prjct/Burgora/src/burgora/view/MainDashBoardForm.java</file>
         </group>
     </open-files>
