@@ -49,6 +49,7 @@ public class LoginForm extends javax.swing.JFrame {
         btnCloseOnAction.setFont(new java.awt.Font("Segoe UI Semibold", 2, 18)); // NOI18N
         btnCloseOnAction.setForeground(new java.awt.Color(255, 255, 255));
         btnCloseOnAction.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/close.png"))); // NOI18N
+        btnCloseOnAction.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnCloseOnAction.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnCloseOnAction.setDoubleBuffered(true);
         btnCloseOnAction.addActionListener(new java.awt.event.ActionListener() {
